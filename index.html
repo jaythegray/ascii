@@ -1,0 +1,23 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Custom ASCII Art Generator</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/figlet/lib/figlet.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>ASCII Art Generator</h1>
+        <textarea id="textInput" placeholder="Enter text here..." rows="4" cols="50"></textarea>
+        <select id="fontSelector" title="Font Selector">
+            <option value="Standard">Standard</option>
+            <option value="Ghost">Ghost</option>
+            <option value="Banner3">Banner3</option>
+        </select>
+        <button onclick="generateArt()" type="button">Generate</button>
+        <pre id="output"></pre>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
